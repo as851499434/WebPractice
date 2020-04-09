@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>严选模块模仿</title>
+    <style>
+        /* 改变默认样式*/
+        body,ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{        
+            list-style: none;
+        }
+        
+        /* 公共样式*/
+        .wrapper{
+            width: 1210px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+    
+        /* one */
+        .one {
+             background-color: #f4f4f4;
+        }
+        .one ul::after {
+            content:"";
+            display: block;
+            clear:both;
+        }
+        .one ul > li{
+            width: 280px;
+            height:  200px;
+            float: left;
+            margin-right: 30px;
+            background-color: chartreuse;
+        }
+
+        .one ul > li:last-child{
+            margin-right: 0;
+        }
+
+
+        /* two*/
+        .two{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .two ul::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        .two ul > li{
+            width: 280px;
+            height: 300px;
+            float: left;
+            margin-right: 30px;
+            background-color: pink;
+        }
+
+        .two ul>li:last-child{
+            margin-right: 0;
+        }
+
+        /*three*/
+        .three{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+         .three ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        } 
+        .three ul>li{
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin-right: 30px;        
+            background-color: aqua;
+        }
+
+        .three ul>li:first-child{
+            width: 520px;
+            height: 430px;
+        }
+
+        .three ul>li:nth-child(4),
+        .three ul>li:nth-child(7){
+            margin-right: 0;
+        }
+        .three ul>li:nth-child(5),
+        .three ul>li:nth-child(6),
+        .three ul>li:nth-child(7){
+            margin-top: 30px;
+        }
+
+        /*four*/
+        .four{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .four ul::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        .four ul>li:nth-child(1){
+            width: 610px;
+            height: 430px;
+            float: left;
+            background-color: bisque;
+        }
+
+        .four ul>li:nth-child(2){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:blueviolet;
+        }
+        .four ul>li:nth-child(3){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:chocolate;
+        }
+        .four ul>li:nth-child(4){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:greenyellow;
+        }
+        .four ul>li:nth-child(5){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:gainsboro;
+        }
+
+        /*five*/
+
+        .five{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .five ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .five ul>li{
+       
+            margin-right: 30px;
+            float: left;
+            width: 270px;
+            height: 85px;
+            background-color: coral;
+        }
+
+
+        .five ul>li:nth-child(2),
+        .five ul>li:nth-child(3),
+        .five ul>li:nth-child(6),
+        .five ul>li:nth-child(7){
+            
+            margin-right: 30px;
+            float: left;
+            width: 250px;
+            height: 300px;
+            background-color: bisque;
+        } 
+     
+        
+        .five ul>li:nth-child(6),
+        .five ul>li:nth-child(7){
+            margin-top: 30px;
+        }
+        .five ul>li:nth-child(4),
+        .five ul>li:nth-child(5){
+            width: 135px;
+            height: 630px;
+            float:right;
+            margin-right: 0;
+        }
+
+        .five ul>li:nth-child(5){
+            margin-right:30px;
+        }
+
+        .five ul>li:first-child{
+            float: left;
+            width: 320px;
+            height:630px;
+            background-color: aquamarine;
+        }
+
+        /*six*/
+        .six{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .six ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .six ul>li{
+            float: left;
+            margin-right: 70px;
+            margin-top: 30px;
+            width: 250px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        .six ul>li:first-child{
+            margin-top: 0;
+            float: left;
+            width: 1210px;
+            height: 200px;
+            background-color: aqua;
+        }
+        .six ul>li:last-child{
+           margin-right: 0;
+        }
+        
+
+              
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="three">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="four">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="five">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="six">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
