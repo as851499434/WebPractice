@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>严选模块模仿</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1749884_078x9iuw94fj.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+                                                 /* 改变默认样式*/
+        body,ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{        
+            list-style: none;
+        }
+        
+                                                 /* 公共样式*/
+        .wrapper{
+            width: 1210px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+                                                 /* top */
+        .top {
+            background-color: black;
+        }
+        .top ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .top ul{
+            background-color: black;
+        }
+        .top  ul > li{
+            margin-left: 10px;
+            float: right;
+        }
+        .top  ul > li > a{
+            text-decoration:none;
+            color:darkgray;
+            font-size: 12px;
+        }
+       
+                                                 /* nav */
+
+        .nav{
+            background-color:#f4f4f4;
+        }
+        .nav ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .nav ul{
+            width: 100%;
+            line-height: 40px;
+            background-color: #f4f4f4;
+        }
+        .nav ul>li{
+            float: left;
+            line-height: 3em;
+            width: 100px;
+            margin-left: 0px;
+            
+            text-align: center;
+        }
+        .nav .wrapper>ul >li:hover {
+            background-color: cornflowerblue;
+            color: #ffffff;
+        }
+        .nav li a {
+            font-size: 10px;
+            text-decoration: none;
+            color: #666666;
+        }
+        .nav >ul >li:hover a {
+            color: #ffffff;
+        }
+      
+        
+        
+                                                 /* one */
+        .one {
+             background-color: #f4f4f4;
+        }
+        .one ul::after {
+            content:"";
+            display: block;
+            clear:both;
+        }
+        .one ul > li{
+            width: 280px;
+            height:  200px;
+            float: left;
+            margin-right: 30px;
+            background-color: chartreuse;
+        }
+
+        .one ul > li:last-child{
+            margin-right: 0;
+        }
+        .one ul>li>img{
+            height: 200px;
+            width: 100%;
+        }
+
+
+                                                /* two*/
+        .two{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .two ul::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        .two ul > li{
+            width: 280px;
+            height: 300px;
+            float: left;
+            margin-right: 30px;
+            background-color: pink;
+        }
+
+        .two ul>li:last-child{
+            margin-right: 0;
+        }
+
+                                                /*three*/
+        .three{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+         .three ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        } 
+        .three ul>li{
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin-right: 30px;        
+            background-color:#ffffff;
+        }
+        .three ul>li>img{
+            width: 100%;
+            border: #666666 1px solid;
+        }
+        .three ul>li:first-child>img{
+            height: 430px;
+            
+        }
+
+        .three ul>li:first-child{
+            width: 520px;
+            height: 430px;
+        }
+
+        .three ul>li:nth-child(4),
+        .three ul>li:nth-child(7){
+            margin-right: 0;
+        }
+        .three ul>li:nth-child(5),
+        .three ul>li:nth-child(6),
+        .three ul>li:nth-child(7){
+            margin-top: 30px;
+        }
+
+                                                /*four*/
+        .four{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .four ul::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        .four ul>li:nth-child(1){
+            width: 610px;
+            height: 430px;
+            float: left;
+            background-color: bisque;
+        }
+
+        .four ul>li:nth-child(2){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:blueviolet;
+        }
+        .four ul>li:nth-child(3){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:chocolate;
+        }
+        .four ul>li:nth-child(4){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:greenyellow;
+        }
+        .four ul>li:nth-child(5){
+            width: 300px;
+            height: 215px;
+            float: left;
+            background-color:gainsboro;
+        }
+
+                                                /*five*/
+
+        .five{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .five ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .five ul>li{
+       
+            margin-right: 30px;
+            float: left;
+            width: 270px;
+            height: 85px;
+            background-color: coral;
+        }
+
+
+        .five ul>li:nth-child(2),
+        .five ul>li:nth-child(3),
+        .five ul>li:nth-child(6),
+        .five ul>li:nth-child(7){
+            
+            margin-right: 30px;
+            float: left;
+            width: 250px;
+            height: 300px;
+            background-color: bisque;
+        } 
+     
+        
+        .five ul>li:nth-child(6),
+        .five ul>li:nth-child(7){
+            margin-top: 30px;
+        }
+        .five ul>li:nth-child(4),
+        .five ul>li:nth-child(5){
+            width: 135px;
+            height: 630px;
+            float:right;
+            margin-right: 0;
+        }
+
+        .five ul>li:nth-child(5){
+            margin-right:30px;
+        }
+
+        .five ul>li:first-child{
+            float: left;
+            width: 320px;
+            height:630px;
+            background-color: aquamarine;
+        }
+
+                                                    /*six*/
+        .six{
+            margin-top: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .six ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .six ul>li{
+            float: left;
+            margin-right: 70px;
+            margin-top: 30px;
+            width: 250px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        .six ul>li:first-child{
+            margin-top: 0;
+            float: left;
+            width: 1210px;
+            height: 200px;
+            background-color: aqua;
+        }
+        .six ul>li:last-child{
+           margin-right: 0;
+        }
+        
+
+              
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class= "wrapper">
+            <ul>
+                <li><a href="">APP</a></li>
+                <li><a href="">会员</a></li>
+                <li><a href="">甄选家</a></li>
+                <li><a href="">企业采购</a></li>
+                <li><a href="">客户服务</a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="two_bar">
+        <div class="wrapper">
+          <!-- 左侧logo -->
+          <a href="">
+            <span class="logo"></span>
+          </a>
+          <!-- 右侧搜索框及购物车 -->
+          <div class="f_right">
+            <!-- 购物车按钮 -->
+            <div class="shopcar">
+              <span class="icon icon_shopcar"></span>
+              <span>购物车</span>
+              <span class="icon icon_num">0</span>
+            </div>
+            <!-- 购物车按钮 -->
+            <!-- 搜索框 -->
+            <div class="search_bar">
+              <div class="search_box">
+                <span class="icon"></span>
+                <input type="search" placeholder="告别啃食尴尬，秘制无骨凤爪">
+                <span class="btn btn_search">搜索</span>
+              </div>
+              <div class="keywords">
+                <ul>
+                  <li><a href="">返场每满125减20</a></li>
+                  <li><a href="">杭州市学生保供口罩</a></li>
+                  <li><a href="">葫芦娃</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 搜索框 -->
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="nav">
+        <div class="wrapper">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">居家好物</a></li>
+                <li><a href="">鞋包服饰</a></li>
+                <li><a href="">美食酒水</a></li>
+                <li><a href="">个人清理</a></li>
+                <li><a href="">母婴亲子</a></li>
+                <li><a href="">运动旅游</a></li>
+                <li><a href="">数码家电</a></li>
+                <li><a href="">全球特色</a></li>
+                <li><a href="">为你严选</a></li>
+                <li><a href="">众筹</a></li>
+            </ul>
+        </div>
+           
+    </div>
+
+    <div class="one">
+        <div class="wrapper">
+            <ul>
+                <li><img src="./imgs/1.webp" alt=""></li>
+                <li><img src="./imgs/2.webp" alt=""></li>
+                <li><img src="./imgs/3.webp" alt=""></li>
+                <li><img src="./imgs/4.webp" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="three">
+        <div class="wrapper">
+            <ul>
+                <li><img src="./imgs/5.webp" alt=""></li>
+                <li><img src="./imgs/6.webp" alt=""></li>
+                <li><img src="./imgs/7.webp" alt=""></li>
+                <li><img src="./imgs/8.webp" alt=""></li>
+                <li><img src="./imgs/9.webp" alt=""></li>
+                <li><img src="./imgs/10.webp" alt=""></li>
+                <li><img src="./imgs/11.webp" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="four">
+        <div class="wrapper">
+            <ul>
+                <li><i class="iconfont icon-icon-test"></i></li>
+                <li><i class="iconfont icon-icon-test1"></i></li>
+                <li><i class="iconfont icon-icon-test2"></i></li>
+                <li><i class="iconfont icon-icon-test3"></i></li>
+                <li><i class="iconfont icon-icon-test"></i></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="five">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="six">
+        <div class="wrapper">
+            <ul>
+                <li ></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
